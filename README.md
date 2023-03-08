@@ -1,10 +1,12 @@
-# CI Example for a service using docker-compose
+# AdminCrashBoard
 
-The .gitlab-ci.yml in this repo builds and pushes all possible images (docker-compose.yml is parsed and used to call kaniko).
+CTF Challenge for the FAUST CTF 2022.
 
-In the vulnbox build process, the compose file is used to pull all images and include them in the vm.
+## Description
 
-# Intended Vulnerabilities
+AdminCrashBoard provides a web based dashboard where Users can login on a linux server and execute commands conveniently from a web interface.
+
+## Intended Vulnerabilities
 
  - Command Injection runs as serveruser
  - Directory Traversal to the flag using the editor
